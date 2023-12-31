@@ -1,0 +1,511 @@
+<header>
+  <nav class="navbar navbar-expand-lg px-xl-4 px-md-0 pt-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/"
+        ><img src="assets/imgs/logo_white.svg" alt=""
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul
+          class="navbar-nav text-sm-start text-center main mx-auto mb-2 mb-lg-0"
+        >
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="/">الرئيسية</a>
+          </li>
+          <li class="nav-item ms-xl-5 ms-lg-3">
+            <a class="nav-link" href="#">التقويم</a>
+          </li>
+          <li class="nav-item dropdown ms-xl-5 ms-lg-3">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              الاعدادات
+            </a>
+            <ul class="dropdown-menu">
+              <li class="px-1 text-center text-light fw-bold">مجلس</li>
+              <li>
+                <a class="dropdown-item" routerLink="/request_comittee"
+                  >طلب انشاء لجنة</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="/committee_settings"
+                  >إعدادات المجلس</a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li class="px-1 text-center text-light fw-bold">المزيد</li>
+              <li>
+                <a class="dropdown-item" routerLink="/add_location"
+                  >إضافة موقع</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="/add_order"
+                  >إضافة لائحة نظام</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="/tracing_decising"
+                  >متابعة القرارات</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item ms-xl-5 ms-lg-3">
+            <a class="nav-link" routerLink="/stats">الأحصائيات</a>
+          </li>
+          <li class="nav-item dropdown ms-xl-5 ms-lg-3">
+            <a
+              class="nav-link active dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >الأعضاء</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" routerLink="/list_members"
+                  >تحرير الأعضاء</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ms-xl-5 ms-lg-3">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >الاجتماعات</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" routerLink="/add_meeting"
+                  >إضافة اجتماع</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="/edit_meeting"
+                  >تحرير الأجتماعات</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="/meeting_location"
+                  >مواقع الاجتماعات</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="navbar-nav other ms mb-2 mb-lg-0">
+          <li class="nav-item">
+            <button
+              class="nav-link ms-2 mb-2 p-2"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasSearch"
+              aria-controls="offcanvasSearch"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </li>
+          <li class="nav-item ms-2 mb-2">
+            <button class="nav-link px-2">EN</button>
+          </li>
+          <li class="nav-item ms-2">
+            <a class="nav-link px-3 py-2 btn" href="#">تسجيل الدخول</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<app-search-bar></app-search-bar>
+<main>
+  <section id="hero">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-5 mb-lg-0 mb-3 pb-lg-0 pb-5">
+          <div class="d-flex flex-column">
+            <div class="main row align-items-center text-center">
+              <div class="col-12">
+                <h1 class="mb-2">مجـالــــــس</h1>
+                <p>نظام إلكتروني لإدارة المجالس والإجتماعات</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 px-0 text-center">
+          <img class="img-fluid" src="assets/imgs/faq-intro2.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-5" id="comitte">
+    <div class="container pt-5">
+      <div
+        class="row create-council pt-5 pb-4 mb-5 justify-content-between align-items-center"
+      >
+        <div class="col-12">
+          <p>إعدادات</p>
+        </div>
+        <div class="col-12 req-committee">
+          <p>تحرير الأعضاء</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pb-5">
+    <div class="container">
+      <div
+        class="row justify-content-around forms members rounded-bottom-4 py-5 px-3 mb-3"
+      >
+        <h6>تحرير الأعضاء</h6>
+        <div class="col-md-8 mb-2">
+          <div class="col-lg-4">
+            <input type="text" class="form-control" placeholder="بحث" />
+          </div>
+        </div>
+        <div class="col-md-4 mb-2 text-sm-end text-center">
+          <button
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasAddMember"
+            aria-controls="offcanvasAddMember"
+            class="searchBtn btn rounded-0 px-4 py-2"
+          >
+            إضافة جديد
+          </button>
+        </div>
+        <div class="table-responsive">
+          <div class="col-12 table-responsive">
+            <table
+              mat-table
+              [dataSource]="dataSource"
+              class="table table-striped table-responsive text-center"
+            >
+              <ng-container matColumnDef="checkbox">
+                <th mat-header-cell *matHeaderCellDef>
+                  <input
+                    type="checkbox"
+                    name=""
+                    id=""
+                    class="form-check-input"
+                    checked
+                    disabled
+                  />
+                </th>
+                <td mat-cell *matCellDef="let element">
+                  <input
+                    type="checkbox"
+                    name=""
+                    id=""
+                    class="form-check-input"
+                  />
+                </td>
+              </ng-container>
+
+              <ng-container matColumnDef="id">
+                <th mat-header-cell *matHeaderCellDef>#</th>
+                <td mat-cell *matCellDef="let element">{{ element.id }}</td>
+              </ng-container>
+
+              <ng-container matColumnDef="name">
+                <th class="text-center" mat-header-cell *matHeaderCellDef>
+                  الأسم
+                </th>
+                <td class="text-center" mat-cell *matCellDef="let element">
+                  <a class="btn" routerLink="/profile/{{ element.id }}">{{
+                    element.name
+                  }}</a>
+                </td>
+              </ng-container>
+
+              <ng-container matColumnDef="authorization">
+                <th mat-header-cell *matHeaderCellDef>الصلاحية</th>
+                <td mat-cell *matCellDef="let element">
+                  {{ element.authorization }}
+                </td>
+              </ng-container>
+
+              <ng-container matColumnDef="position">
+                <th mat-header-cell *matHeaderCellDef>المنصب</th>
+                <td mat-cell *matCellDef="let element">
+                  {{ element.position }}
+                </td>
+              </ng-container>
+
+              <ng-container matColumnDef="email">
+                <th mat-header-cell *matHeaderCellDef>البريد الالكتروني</th>
+                <td mat-cell *matCellDef="let element">
+                  {{ element.email }}
+                </td>
+              </ng-container>
+
+              <ng-container matColumnDef="phone">
+                <th mat-header-cell *matHeaderCellDef>الجوال</th>
+                <td mat-cell *matCellDef="let element">
+                  {{ element.phone }}
+                </td>
+              </ng-container>
+
+              <ng-container matColumnDef="edit">
+                <th mat-header-cell *matHeaderCellDef>تعديل</th>
+                <td mat-cell *matCellDef="let element">
+                  <a
+                    class="clearBtn btn rounded-0"
+                    routerLink="/edit_profile/{{ element.id }}"
+                    >تعديل</a
+                  >
+                </td>
+              </ng-container>
+
+              <ng-container matColumnDef="delete">
+                <th mat-header-cell *matHeaderCellDef>حذف</th>
+                <td mat-cell *matCellDef="let element">
+                  <button
+                    (click)="remove(element.id)"
+                    class="cancelBtn btn rounded-0"
+                  >
+                    حذف
+                  </button>
+                </td>
+              </ng-container>
+
+              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+            </table>
+
+            <mat-paginator
+              [pageSizeOptions]="[5, 10, 20]"
+              showFirstLastButtons
+              aria-label="Select page of periodic elements"
+            >
+            </mat-paginator>
+          </div>
+          <div *ngIf="!firstTable" class="col-12">
+            <div class="alert global-alert py-md-5 py-sm-4 py-3 text-center">
+              <h4 class="mb-3">...عذرا</h4>
+              <p>البيانات غير متوفرة</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ============ offCanvas right ============= -->
+  <div
+    class="offcanvas offcanvas-start"
+    data-bs-scroll="true"
+    tabindex="-1"
+    id="offcanvasAddMember"
+    aria-labelledby="offcanvasAddMemberLabel"
+  >
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasAddMemberLabel">اضافة عضو</h5>
+      <button
+        type="button"
+        class="btn-close border rounded-75 border-black"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="container">
+      <hr class="border-3 opacity-100" />
+    </div>
+    <div class="offcanvas-body">
+      <div class="form-group mb-4">
+        <label for="username" class="mb-3">اسم المستخدم</label>
+        <input
+          type="text"
+          [(ngModel)]="user.name"
+          class="form-control"
+          id="username"
+        />
+      </div>
+      <div class="form-group mb-4">
+        <h6 class="mb-3">الصلاحيات</h6>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-3 col-6 mb-2 form-group px-1">
+              <input
+                type="radio"
+                [(ngModel)]="user.position"
+                name="member"
+                value="عضو"
+                id="member"
+                class="form-check-input"
+              />
+              <label class="ms-2" for="member">عضو</label>
+            </div>
+            <div class="col-sm-3 col-6 mb-2 form-group px-1">
+              <input
+                type="radio"
+                name="member"
+                [(ngModel)]="user.position"
+                id="supervisor"
+                value="مشرف"
+                class="form-check-input"
+              />
+              <label class="ms-2" for="supervisor">مشرف</label>
+            </div>
+            <div class="col-sm-3 col-6 mb-2 form-group px-1">
+              <input
+                type="radio"
+                name="member"
+                [(ngModel)]="user.position"
+                id="chairman"
+                value="رئيس"
+                class="form-check-input"
+              />
+              <label class="ms-2" for="chairman">رئيس</label>
+            </div>
+            <div class="col-sm-3 col-6 mb-2 form-group px-1">
+              <input
+                type="radio"
+                name="member"
+                [(ngModel)]="user.position"
+                id="visitor"
+                value="عضو زائر"
+                class="form-check-input"
+              />
+              <label class="ms-2" for="visitor">عضو زائر</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="group-form mb-5">
+        <label for="rank" class="mb-3">الترتيب</label>
+        <input type="text" [(ngModel)]="user.rank" class="form-control" />
+      </div>
+      <div class="form-group text-sm-end text-center mb-4">
+        <button (click)="submit()" class="btn searchBtn px-sm-5 px-3">
+          حفظ
+        </button>
+        <button data-bs-dismiss="offcanvas" class="btn clearBtn px-3 ms-2">
+          العودة للرئيسية
+        </button>
+      </div>
+      <div *ngIf="message.length > 0" class="alert alert-success">
+        <h3 class="text-center">تم اضافة العضو بنجاح</h3>
+      </div>
+    </div>
+  </div>
+  <!-- ========================================== -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="container px-0">
+            <div class="row py-5 text-md-start text-center faq">
+              <div class="col-lg-4 col-md-4 mt-5">
+                <p>
+                  <i class="fa-solid fa-bullseye p-3 rounded-3"></i>
+                </p>
+                <p><a routerLink="/request_comittee">طلب إنشاء / لجنة</a></p>
+              </div>
+              <div class="col-lg-5 col-md-4 mt-5">
+                <p>
+                  <i class="fa-solid fa-shield p-3 rounded-3"></i>
+                </p>
+                <p><a href="#">الدورات التدريبة</a></p>
+              </div>
+              <div class="col-lg-3 col-md-4 mt-5">
+                <p>
+                  <i class="fa-solid fa-sliders p-3 rounded-3"></i>
+                </p>
+                <p><a href="#">دليل المستخدم</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="container px-sm-0">
+    <hr />
+  </div>
+  <div class="container pt-5 pb-5">
+    <div
+      class="row justify-content-md-between justify-content-center text-md-start text-center"
+    >
+      <div class="col-xl-2 col-lg-3 col-md-4 col-5 mb-md-0 mb-4">
+        <img src="assets/imgs/logo_heder.svg" class="img-fluid" alt="" />
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <p>
+          إحدى معالم النهضة الوطنية في شمال المملكة حاصلة على الاعتماد المؤسسي
+          من المركز الوطني للتقويم. والاعتماد الأكاديمي.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container px-sm-0">
+    <hr />
+  </div>
+  <div class="container">
+    <div
+      class="d-flex flex-wrap justify-content-md-between justify-content-center align-items-center py-3 mt-4"
+    >
+      <ul
+        class="nav col-lg-5 justify-content-sm-start justify-content-center text-sm-start text-center"
+      >
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2">من نحن</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2">الأسئلة الشائعة</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2">الشروط والأحكام</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2">اتصل بنا</a>
+        </li>
+      </ul>
+      <ul
+        class="nav col-xl-3 col-lg-3 justify-content-center align-items-center"
+      >
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2">تواصل معنا</a>
+        </li>
+        <li class="nav-item ms-4">
+          <a href="#" class="nav-link px-2"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+        </li>
+        <li class="nav-item ms-2">
+          <a href="#" class="nav-link px-2"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </li>
+        <li class="nav-item ms-2">
+          <a href="#" class="nav-link px-2"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+      </ul>
+      <p class="col-xl-4 col-lg-4 col-12 mb-0 text-lg-end text-center">
+        الحقوق المحفوظه جامعة الجوف ©
+      </p>
+    </div>
+  </div>
+</footer>

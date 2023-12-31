@@ -1,0 +1,139 @@
+<header>
+  <nav class="navbar navbar-expand-lg px-xl-4 px-md-0 pt-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/"
+        ><img src="assets/imgs/logo_white.svg" alt=""
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul
+          class="navbar-nav text-sm-start text-center main mx-auto mb-2 mb-lg-0"
+        >
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="/">الرئيسية</a>
+          </li>
+          <li class="nav-item ms-xl-5 ms-lg-3">
+            <a class="nav-link" href="#">التقويم</a>
+          </li>
+          <li class="nav-item dropdown ms-xl-5 ms-lg-3">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              الاعدادات
+            </a>
+            <ul class="dropdown-menu">
+              <li class="px-1 text-center text-light fw-bold">مجلس</li>
+              <li>
+                <a class="dropdown-item" routerLink="/request_comittee"
+                  >طلب انشاء لجنة</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="/committee_settings"
+                  >إعدادات المجلس</a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li class="px-1 text-center text-light fw-bold">المزيد</li>
+              <li>
+                <a class="dropdown-item" routerLink="/add_location"
+                  >إضافة موقع</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="/add_order"
+                  >إضافة لائحة نظام</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="/tracing_decising"
+                  >متابعة القرارات</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item ms-xl-5 ms-lg-3">
+            <a class="nav-link active" routerLink="/stats">الأحصائيات</a>
+          </li>
+          <li class="nav-item dropdown ms-xl-5 ms-lg-3">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >الأعضاء</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" routerLink="/list_members"
+                  >تحرير الأعضاء</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ms-xl-5 ms-lg-3">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >الاجتماعات</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" routerLink="/add_meeting"
+                  >إضافة اجتماع</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="/edit_meeting"
+                  >تحرير الأجتماعات</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="/meeting_location"
+                  >مواقع الاجتماعات</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="navbar-nav other ms mb-2 mb-lg-0">
+          <li class="nav-item">
+            <button
+              class="nav-link ms-2 mb-2 p-2"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasSearch"
+              aria-controls="offcanvasSearch"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </li>
+          <li class="nav-item ms-2 mb-2">
+            <button class="nav-link px-2">EN</button>
+          </li>
+          <li class="nav-item ms-2">
+            <a class="nav-link px-3 py-2 btn" href="#">تسجيل الدخول</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

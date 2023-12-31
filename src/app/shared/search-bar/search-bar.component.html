@@ -1,0 +1,77 @@
+<div
+  class="offcanvas offcanvas-top rounded-bottom-5"
+  tabindex="-1"
+  id="offcanvasSearch"
+  aria-labelledby="offcanvasTopLabel"
+>
+  <div class="offcanvas-header container pt-5">
+    <h5 class="offcanvas-title" id="offcanvasTopLabel">بحث متقدم</h5>
+    <button
+      type="button"
+      class="btn-close border rounded-75 border-black"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div class="container">
+    <hr class="border-3 opacity-100" />
+  </div>
+  <div class="offcanvas-body container pb-5">
+    <div class="row align-items-center">
+      <div *ngIf="message.length > 0" class="col-12">
+        <div class="alert alert-warning">
+          <h5 class="text-center">{{ message }}</h5>
+        </div>
+      </div>
+      <div class="col-md-6 form-group mb-3">
+        <label class="form-label" for="searchText">نص البحث</label>
+        <input
+          type="text"
+          id="searchText"
+          [(ngModel)]="searchText"
+          class="form-control"
+        />
+      </div>
+      <div class="col-md-6 form-group mb-3">
+        <label class="form-label" for="searchType">نوع البحث</label>
+        <select [(ngModel)]="searchType" class="form-select" id="searchType">
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+      </div>
+      <div class="col-md-6 form-group mb-3">
+        <label class="form-label" for="council">المجلس</label>
+        <select [(ngModel)]="council" class="form-select" id="council">
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+      </div>
+      <div class="col-md-6 form-group mb-3">
+        <label class="form-label" for="fromDate">من تاريخ</label>
+        <input
+          type="date"
+          [(ngModel)]="fromDate"
+          id="fromDate"
+          class="form-control"
+        />
+      </div>
+      <div class="col-md-6 form-group mb-3">
+        <label class="form-label" for="toDate">الى تاريخ</label>
+        <input
+          type="date"
+          [(ngModel)]="toDate"
+          id="toDate"
+          class="form-control"
+        />
+      </div>
+      <div class="col-md-6 form-group text-end">
+        <button class="searchBtn btn px-4">بحث</button>
+        <button (click)="clearInputs()" class="clearBtn btn px-4 ms-4">
+          تفريغ
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,158 @@
+{
+  "stats": [
+    {
+      "id": 1,
+      "name": "فهد زامل عبدالله المانع",
+      "count": 0
+    },
+    {
+      "id": 2,
+      "name": "وائل الفتحي الترهوني",
+      "count": 0
+    },
+    {
+      "id": 3,
+      "name": "فهد زامل عبدالله المانع",
+      "count": 0
+    },
+    {
+      "id": 4,
+      "name": "وائل الفتحي الترهوني",
+      "count": 0
+    },
+    {
+      "id": 5,
+      "name": "فهد زامل عبدالله المانع",
+      "count": 0
+    },
+    {
+      "id": 6,
+      "name": "وائل الفتحي الترهوني",
+      "count": 0
+    },
+    {
+      "id": 7,
+      "name": "فهد زامل عبدالله المانع",
+      "count": 0
+    },
+    {
+      "id": 8,
+      "name": "وائل الفتحي الترهوني",
+      "count": 0
+    }
+  ],
+  "locations": [
+    {
+      "name": "Gedda",
+      "seats": "5",
+      "url": "www.google.com",
+      "devices": "15",
+      "id": 1
+    }
+  ],
+  "requests": [],
+  "council": [],
+  "orders": [],
+  "decisions": [
+    {
+      "subject": "asdsada",
+      "meeting": "asdasdads",
+      "decision": "asdsaddsad",
+      "date": "2023-12-30",
+      "rate": "123212",
+      "administrator": "sadasd",
+      "id": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "فهد زامل عبدالله المانع",
+      "vote": "عدم السماح",
+      "username": "fzalmana",
+      "authorization": "مشرف",
+      "position": "مشرف",
+      "email": "fzalmana@ju.edu.sa",
+      "phone": "561708579",
+      "rank": "1325440"
+    },
+    {
+      "id": 2,
+      "name": "وائل الفتحي الترهوني",
+      "vote": "السماح",
+      "username": "uwael",
+      "authorization": "سكرتير",
+      "position": "سكرتير",
+      "email": "uwael@ju.edu.sa",
+      "phone": "0567491237",
+      "rank": "5652840"
+    },
+    {
+      "id": 3,
+      "name": "فهد زامل عبدالله المانع",
+      "vote": "عدم السماح",
+      "username": "fzalmana",
+      "authorization": "مشرف",
+      "position": "مشرف",
+      "email": "fzalmana@ju.edu.sa",
+      "phone": "561708579",
+      "rank": "1325440"
+    },
+    {
+      "id": 4,
+      "name": "وائل الفتحي الترهوني",
+      "vote": "السماح",
+      "username": "uwael",
+      "authorization": "سكرتير",
+      "position": "سكرتير",
+      "email": "uwael@ju.edu.sa",
+      "phone": "0567491237",
+      "rank": "5652840"
+    },
+    {
+      "id": 5,
+      "name": "فهد زامل عبدالله المانع",
+      "vote": "عدم السماح",
+      "username": "fzalmana",
+      "authorization": "مشرف",
+      "position": "مشرف",
+      "email": "fzalmana@ju.edu.sa",
+      "phone": "561708579",
+      "rank": "1325440"
+    },
+    {
+      "id": 6,
+      "name": "وائل الفتحي الترهوني",
+      "vote": "السماح",
+      "username": "uwael",
+      "authorization": "سكرتير",
+      "position": "سكرتير",
+      "email": "uwael@ju.edu.sa",
+      "phone": "0567491237",
+      "rank": "5652840"
+    },
+    {
+      "id": 7,
+      "name": "وائل الفتحي الترهوني",
+      "vote": "السماح",
+      "username": "uwael",
+      "authorization": "مشرف",
+      "position": "مشرف",
+      "email": "uwael@ju.edu.sa",
+      "phone": "0567491237",
+      "rank": "5652840"
+    }
+  ],
+  "meetings": [
+    {
+      "name": "اجتماع وزاري",
+      "code": "5166",
+      "date": "2023-12-30",
+      "startTime": "13:05",
+      "endTime": "15:15",
+      "location": "Jeddah",
+      "virtual": "yes",
+      "id": 1
+    }
+  ]
+}

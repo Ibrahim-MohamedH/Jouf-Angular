@@ -1,0 +1,351 @@
+<header>
+  <nav class="navbar navbar-expand-lg px-xl-4 px-md-0 pt-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/"
+        ><img src="assets/imgs/logo_white.svg" alt=""
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul
+          class="navbar-nav text-sm-start text-center main mx-auto mb-2 mb-lg-0"
+        >
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="/">الرئيسية</a>
+          </li>
+          <li class="nav-item ms-xl-5 ms-lg-3">
+            <a class="nav-link" href="#">التقويم</a>
+          </li>
+          <li class="nav-item dropdown ms-xl-5 ms-lg-3">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              الاعدادات
+            </a>
+            <ul class="dropdown-menu">
+              <li class="px-1 text-center text-light fw-bold">مجلس</li>
+              <li>
+                <a class="dropdown-item" routerLink="/request_comittee"
+                  >طلب انشاء لجنة</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="/committee_settings"
+                  >إعدادات المجلس</a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li class="px-1 text-center text-light fw-bold">المزيد</li>
+              <li>
+                <a class="dropdown-item" routerLink="/add_location"
+                  >إضافة موقع</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="/add_order"
+                  >إضافة لائحة نظام</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="/tracing_decising"
+                  >متابعة القرارات</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item ms-xl-5 ms-lg-3">
+            <a class="nav-link" routerLink="/stats">الأحصائيات</a>
+          </li>
+          <li class="nav-item dropdown ms-xl-5 ms-lg-3">
+            <a
+              class="nav-link active dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >الأعضاء</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" routerLink="/list_members"
+                  >تحرير الأعضاء</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ms-xl-5 ms-lg-3">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >الاجتماعات</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" routerLink="/add_meeting"
+                  >إضافة اجتماع</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="/edit_meeting"
+                  >تحرير الأجتماعات</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="/meeting_location"
+                  >مواقع الاجتماعات</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="navbar-nav other ms mb-2 mb-lg-0">
+          <li class="nav-item">
+            <button
+              class="nav-link ms-2 mb-2 p-2"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasSearch"
+              aria-controls="offcanvasSearch"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </li>
+          <li class="nav-item ms-2 mb-2">
+            <button class="nav-link px-2">EN</button>
+          </li>
+          <li class="nav-item ms-2">
+            <a class="nav-link px-3 py-2 btn" href="#">تسجيل الدخول</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<app-search-bar></app-search-bar>
+<main>
+  <section id="hero">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-5 mb-lg-0 mb-3 pb-lg-0 pb-5">
+          <div class="d-flex flex-column">
+            <div class="main row align-items-center text-center">
+              <div class="col-12">
+                <h1 class="mb-2">مجـالــــــس</h1>
+                <p>نظام إلكتروني لإدارة المجالس والإجتماعات</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 px-0 text-center">
+          <img
+            class="img-fluid"
+            src="assets/imgs/Personal site-amico.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-5" id="comitte">
+    <div class="container pt-5">
+      <div
+        class="row create-council pt-5 pb-4 mb-5 justify-content-between align-items-center"
+      >
+        <div class="col-12"><p>إعدادات</p></div>
+        <div class="col-12 req-committee">
+          <p>البيانات الشخصية</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="edit-profile" class="pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-5">
+          <div class="col-12 profile-card rounded-3 p-4">
+            <div class="container-fluid">
+              <div class="row align-items-center py-3">
+                <div class="col-3">
+                  <img
+                    src="assets/imgs/eetamad.svg"
+                    alt=""
+                    class="img-fluid rounded-circle profile-img"
+                  />
+                </div>
+                <div class="col-9">
+                  <h5 class="fw-bold">{{ user.name }}</h5>
+                  <span>{{ user.authorization }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="container-fluid">
+            <div
+              class="row justify-content-around profile rounded-bottom-4 py-5 px-md-4 px-2 mb-3"
+            >
+              <h6 class="fw-bold mb-4">معلومات الحساب</h6>
+              <div class="form-group col-6 mb-5">
+                <div class="row">
+                  <div class="col-md-4 mb-md-0 mb-2">
+                    <h6 class="fw-bold">اسم</h6>
+                  </div>
+                  <div class="col-md-8">
+                    <p>{{ user.name }}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group col-6 mb-5">
+                <div class="row">
+                  <div class="col-md-4 mb-md-0 mb-2">
+                    <h6 class="fw-bold">المنصب</h6>
+                  </div>
+                  <div class="col-md-8">
+                    <p>{{ user.position }}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group col-6 mb-5">
+                <div class="row">
+                  <div class="col-md-4 mb-md-0 mb-2">
+                    <h6 class="fw-bold">البريد الألكتروني</h6>
+                  </div>
+                  <div class="col-md-8">
+                    <p>{{ user.email }}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group col-6 mb-5">
+                <div class="row">
+                  <div class="col-md-4 mb-md-0 mb-2">
+                    <h6 class="fw-bold">الجوال</h6>
+                  </div>
+                  <div class="col-md-8">
+                    <p>{{ user.phone }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="container px-0">
+            <div class="row py-5 text-md-start text-center faq">
+              <div class="col-lg-4 col-md-4 mt-5">
+                <p>
+                  <i class="fa-solid fa-bullseye p-3 rounded-3"></i>
+                </p>
+                <p><a routerLink="/request_comittee">طلب إنشاء / لجنة</a></p>
+              </div>
+              <div class="col-lg-5 col-md-4 mt-5">
+                <p>
+                  <i class="fa-solid fa-shield p-3 rounded-3"></i>
+                </p>
+                <p><a href="#">الدورات التدريبة</a></p>
+              </div>
+              <div class="col-lg-3 col-md-4 mt-5">
+                <p>
+                  <i class="fa-solid fa-sliders p-3 rounded-3"></i>
+                </p>
+                <p><a href="#">دليل المستخدم</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="container px-sm-0">
+    <hr />
+  </div>
+  <div class="container pt-5 pb-5">
+    <div
+      class="row justify-content-md-between justify-content-center text-md-start text-center"
+    >
+      <div class="col-xl-2 col-lg-3 col-md-4 col-5 mb-md-0 mb-4">
+        <img src="assets/imgs/logo_heder.svg" class="img-fluid" alt="" />
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <p>
+          إحدى معالم النهضة الوطنية في شمال المملكة حاصلة على الاعتماد المؤسسي
+          من المركز الوطني للتقويم. والاعتماد الأكاديمي.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container px-sm-0">
+    <hr />
+  </div>
+  <div class="container">
+    <div
+      class="d-flex flex-wrap justify-content-md-between justify-content-center align-items-center py-3 mt-4"
+    >
+      <ul
+        class="nav col-lg-5 justify-content-sm-start justify-content-center text-sm-start text-center"
+      >
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2">من نحن</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2">الأسئلة الشائعة</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2">الشروط والأحكام</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2">اتصل بنا</a>
+        </li>
+      </ul>
+      <ul
+        class="nav col-xl-3 col-lg-3 justify-content-center align-items-center"
+      >
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2">تواصل معنا</a>
+        </li>
+        <li class="nav-item ms-4">
+          <a href="#" class="nav-link px-2"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+        </li>
+        <li class="nav-item ms-2">
+          <a href="#" class="nav-link px-2"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </li>
+        <li class="nav-item ms-2">
+          <a href="#" class="nav-link px-2"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+      </ul>
+      <p class="col-xl-4 col-lg-4 col-12 mb-0 text-lg-end text-center">
+        الحقوق المحفوظه جامعة الجوف ©
+      </p>
+    </div>
+  </div>
+</footer>
