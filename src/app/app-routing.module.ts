@@ -14,6 +14,8 @@ import { MeetingLocationComponent } from './settings/meeting/meeting-location/me
 import { AddLocationComponent } from './settings/add-location/add-location.component';
 import { AddOrderComponent } from './settings/add-order/add-order.component';
 import { TracingDecisionComponent } from './settings/tracing-decision/tracing-decision.component';
+import { LoginComponent } from './access/login/login.component';
+import { RegisterComponent } from './access/register/register.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -30,6 +32,9 @@ const routes: Routes = [
   { path: 'edit_profile/:id', component: EditProfileComponent },
   // statistics
   { path: 'stats', component: StatisticsComponent },
+  // access
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
   // more Settings
   { path: 'add_location', component: AddLocationComponent },
   { path: 'add_order', component: AddOrderComponent },

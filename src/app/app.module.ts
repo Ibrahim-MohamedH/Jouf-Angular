@@ -25,6 +25,8 @@ import { SettingsComponent as ComitteeSettingsComponent } from './createCommitte
 import { AddLocationComponent } from './settings/add-location/add-location.component';
 import { AddOrderComponent } from './settings/add-order/add-order.component';
 import { TracingDecisionComponent } from './settings/tracing-decision/tracing-decision.component';
+// Access components
+import { LoginComponent } from './access/login/login.component';
 // - Not Found (404) Component:
 import { NotFoundComponent } from './not-found/not-found.component';
 // Angular Material
@@ -32,8 +34,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
 // Api and Forms handling
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { RegisterComponent } from './access/register/register.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +58,8 @@ import { HttpClientModule } from '@angular/common/http';
     AddOrderComponent,
     TracingDecisionComponent,
     SearchBarComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
@@ -64,6 +69,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatPaginatorModule,
     FormsModule,
     HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

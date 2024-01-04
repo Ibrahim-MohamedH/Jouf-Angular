@@ -6,13 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
-  lang = '';
-
-  constructor() {
-    localStorage.setItem('lang', 'arabic');
-  }
-  changeToEn() {
-    localStorage.setItem('lang', 'english');
-    this.lang = 'english';
-  }
+  constructor() {}
 }

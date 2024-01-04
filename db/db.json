@@ -141,6 +141,14 @@
       "email": "uwael@ju.edu.sa",
       "phone": "0567491237",
       "rank": "5652840"
+    },
+    {
+      "firstName": "ابراهيم",
+      "lastName": "محمد",
+      "username": "Ibrahim",
+      "email": "asdias@gmail.com",
+      "password": "1234",
+      "id": 8
     }
   ],
   "meetings": [

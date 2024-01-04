@@ -142,6 +142,21 @@ hr.border-3 {
   max-width: 100px;
 }
 /* =========== section-2 ========= */
+#access {
+  background: transparent
+    linear-gradient(
+      180deg,
+      #fffde724 0%,
+      #71690259 53%,
+      #60580247 63%,
+      #3e390100 100%
+    )
+    0% 0% no-repeat;
+  min-height: 100vh;
+}
+#access form {
+  background-color: #7b7202;
+}
 #councils {
   background: transparent
     linear-gradient(

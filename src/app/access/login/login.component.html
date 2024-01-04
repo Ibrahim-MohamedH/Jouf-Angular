@@ -1,0 +1,65 @@
+<main id="access" class="pt-5">
+  <div class="container pt-5">
+    <div class="row justify-content-center align-items-center pt-md-5 pt-3">
+      <div class="col-xl-5 col-lg-6 col-md-8 pt-md-5 pt-3">
+        <div *ngIf="message.length > 0" class="alert alert-danger">
+          {{ message }}
+        </div>
+        <form [formGroup]="login" class="p-md-3 p-2 rounded-3 mb-3 text-light">
+          <div class="form-group mb-3">
+            <label for="email" class="form-label">البريد الألكتروني</label>
+            <input
+              type="email"
+              formControlName="email"
+              name="email"
+              id="email"
+              class="form-control"
+            />
+            <div
+              *ngIf="email?.touched && email?.invalid"
+              class="alert alert-danger mt-2 text-center"
+            >
+              يجب ادخال البريد الألكتروني
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label for="password" class="form-label">الرقم السري</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              formControlName="password"
+              class="form-control"
+            />
+            <div
+              *ngIf="password?.touched && password?.invalid"
+              class="alert alert-danger mt-2 text-center"
+            >
+              يجب ادخال الرقم السري
+            </div>
+          </div>
+          <div class="form-group text-center mb-4">
+            <button (click)="submit()" class="btn clearBtn px-4 py-2 rounded-2">
+              دخول
+            </button>
+          </div>
+        </form>
+        <div class="text-center">
+          <p>
+            لست عضوا؟
+            <a class="btn searchBtn" routerLink="/register"
+              >سجل الأن<i class="fa-solid fa-left-long ms-2"></i
+            ></a>
+          </p>
+          <p>
+            <a routerLink="/" class="btn printBtn rounded-0 px-5 py-3">
+              <span
+                ><i class="fa-solid fa-house"></i> العوده للصفحة الرئيسية</span
+              >
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
